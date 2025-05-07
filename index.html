@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Styling and JavaScript</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Advanced Styling and JavaScript</h1>
+      <p>
+        Gain advanced skills in CSS and JavaScript for building interactive,
+        responsive sites.
+      </p>
+      <button id="darkModeToggle">Dark Mode</button>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Quiz</h2>
+        <p id="quizQuestion"></p>
+        <div id="quizOptions"></div>
+        <p id="quizResult"></p>
+        <button id="nextQuestion">Next</button>
+      </section>
+      <section id="carouselSection">
+        <h2>Image Carousel</h2>
+        <div class="carousel">
+          <button id="prevBtn">⟨</button>
+          <img id="carouselImage" src="image1.jpeg" alt="Carousel Image" />
+          <button id="nextBtn">⟩</button>
+        </div>
+      </section>
+      
+
+      <section>
+        <h2>Get a Joke</h2>
+        <label for="jokeCategory">Choose a category:</label>
+        <select id="jokeCategory">
+          <option value="Any">Any</option>
+          <option value="Programming">Programming</option>
+          <option value="Misc">Misc</option>
+          <option value="Dark">Dark</option>
+          <option value="Pun">Pun</option>
+          <option value="Spooky">Spooky</option>
+          <option value="Christmas">Christmas</option>
+        </select>
+        <button id="jokeButton">Get a Joke</button>
+        <div id="jokePopup" class="hidden"></div>
+      </section>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
